@@ -1,0 +1,48 @@
+RewriteEngine On
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+	
+	#amit add 
+	#RewriteEngine on
+	#RewriteCond %{HTTP_HOST} ^meinweekend.ch [NC]
+	#RewriteRule ^(.*)$ https://www.meinweekend.ch/$1 [L,R=301,NC]
+	#amit add 
+	#Force non-www:
+	#RewriteEngine on
+	#RewriteCond %{HTTP_HOST} ^www\.meinweekend\.ch [NC]
+	#RewriteRule ^(.*)$ https://meinweekend.ch/$1 [L,R=301]
+	
+	#RewriteEngine On
+    #RewriteRule ^(.*)$ https://meinweekend.ch/$1 [L,R=301]
+    #Redirect permanent / https://www.meinweekend.ch/
+	
+	RewriteEngine On
+	RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+	#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
+	RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]    
+    RewriteRule ^(.*)([^/])$ http://%{HTTP_HOST}/$1$2/ [L,R=301]
+    RewriteCond %{REQUEST_URI}  !\.(php|html?|jpg|gif)$
+  
+
+	#amit add
+	
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+</IfModule>

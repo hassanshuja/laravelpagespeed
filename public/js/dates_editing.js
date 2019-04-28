@@ -1,0 +1,5 @@
+$(document).on('change','.datelist_selector',function(){var val=$('#datelist_textarea_'+this.id).val();var date=$("#"+this.id).val();var dateAttr=date.split('-');var month=dateAttr[1].replace(/^0+/,'');var day=dateAttr[2].replace(/^0+/,'');var newDate=day+'.'+month+'.'+dateAttr[0];if(val==''||val==null){var displaydate=newDate}else{var displaydate='\r\n'+newDate}
+    if(date==''||date==null||date==0||date=='0'){return!1}
+    $('#datelist_textarea_'+this.id).val($('#datelist_textarea_'+this.id).val()+displaydate)});$(document).on('change','.datelist_closed_selector',function(){var val=$('#datelist_closed_textarea_'+this.id).val();var date=$('#'+this.id).val();var dateAttr=date.split('-');var month=dateAttr[1].replace(/^0+/,'');var day=dateAttr[2].replace(/^0+/,'');var newDate=day+'.'+month+'.'+dateAttr[0];if(val==''||val==null){var displaydate=newDate}else{var displaydate='\r\n'+newDate}
+    if(date==''||date==null||date==0||date=='0'){return!1}
+    $('#datelist_closed_textarea_'+this.id).val($('#datelist_closed_textarea_'+this.id).val()+displaydate)})

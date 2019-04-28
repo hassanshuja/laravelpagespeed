@@ -1,0 +1,38 @@
+User-agent: *
+
+# folders
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /fonts/
+Allow: /webfonts/
+Allow: /reservation/
+
+# parameters
+#Disallow: /*?id=*               # non-realurl URLs
+#Disallow: /*cHash               # no cHash
+#Disallow: /*?step=*              # no reservation step
+#Disallow: /*&pushD=*              # no date reservation step
+#Disallow: /*&selDate=*              # no date selected step
+
+#Disallow: /reservation/
+Disallow: /datenschutz/
+Disallow: /agb/
+Disallow: /geschenkideen/
+Disallow: /mainVaucherReservation/
+Disallow: /offerVaucherReservation/
+Disallow: /newsletter/
+Disallow: /kontakt/
+Noindex: /fuer/*-*-*-
+Noindex: /*fuer/*-*-*-
+Noindex: /*fuer/
+Noindex: /nc/reservation/?tx_travel_application[offer]=*&tx_travel_application[date]=*
+Noindex: /nc/reservation/*
+Noindex: /*nc/reservation/?tx_travel_application
+Noindex: /*nc/reservation/?tx_travel_application/*-*-*-
+Noindex: /fuer/
+Noindex: /reservation/
+Noindex: /nc/reservation/*
+Noindex: /de/*
+Sitemap: https://www.meinweekend.ch/sitemap.xml

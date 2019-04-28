@@ -1,0 +1,182 @@
+hhhhh .stepsHold .nopadding {
+    background: #afb4c7;
+}
+.stepsHold {
+    margin-top: 60px;
+}
+.stepsHold h5 {
+    font-size: 15px;
+    text-align: center;
+    margin:0px;
+}
+.stepsHoldText {
+    padding-left: 0px;
+    margin-left: 15px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.stepsHoldText h1 {
+    color: #e20510;
+    font-weight: normal;
+}
+.bookingText {
+    margin-left: 15px;
+    padding-left: 0px;
+}
+.bookingText h3 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #373737;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Roboto',sans-serif;
+}
+.bookingText h5 {
+    color: #0068b5;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-bottom: 19px;
+}
+.bookingRow {
+    padding-left: 0px;
+    margin-left: 15px;
+    display: table;
+}
+.bookingRow p {
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Roboto',sans-serif;
+}
+.tableText1 {
+    padding-bottom: 20px;
+}
+.tableText2{
+    padding-left: 30px;
+    display: table-cell;
+}
+.firstP , .secondaryP {
+    display: block;
+}
+.table {
+    width: 95%;
+    margin-left: 15px;
+    font-size: 11px;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #bfbfbf;
+}
+.table td, .table th {
+    padding: .35rem;
+    vertical-align: top;
+    border-top: none;
+    border-bottom: 1px solid #bfbfbf; 
+}
+#pageDynamic {
+    overflow: hidden;
+}
+.formInfo {
+    border-bottom: 1px solid #bfbfbf;
+}
+.textHolder span {
+    color: #0068b5;
+    font-weight: bold;
+}
+.checkText input {
+    display: inline-block;
+}
+.checkText p {
+    font-weight: bold;
+    display: inline-block !important;
+    font-size: 12px !important;
+}
+.buttonBack {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buttonSuc {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.button button {
+    color: #Fff;
+    background-color: #013a89 !important;
+    width: 160px;
+    border-radius: 30px !important;
+    text-align: center;
+}
+@media (max-width:576px) {
+    .table {
+        font-size: 10px;
+    }
+    .stepsHoldText h1 {
+        font-size: 21px;
+    }
+    .button button {
+        color: #Fff;
+        background-color: #013a89 !important;
+        width: 100px;
+        border-radius: 30px !important;
+        text-align: center;
+    }
+}
+@media (min-width:768px) {
+    .hhhhh {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .mmmmm {
+        width: 65%;
+        display: inline-block;
+        margin-right: 0px;
+    }
+    .nnnnn {
+        width: 35%;
+        display: inline-block;
+        white-space: normal;
+    }
+    .textHolder {
+        margin-top: 15px;
+    }
+    .allPage {
+        margin-left: 25px;
+    }
+    .stepsHold {
+        margin-top: 109px !important;
+    }
+    .formInfo {
+        display: inline;
+        border: none;
+    }
+    .allInfo input {
+        width: 100% !important;
+    }
+    .allInfo {
+
+        margin-right: 30px;
+    }
+    .table {
+        width: 100% !important;
+    }
+    .inputInfo {
+    white-space: nowrap;
+    width: 100%
+    }
+    .input1 {
+        width: 50%;
+        display: inline-block;
+    }
+    .input2{
+        display: inline-block;
+        width: 49%;
+    }
+    .checkText p {
+        font-size: 20px;
+    }
+} 

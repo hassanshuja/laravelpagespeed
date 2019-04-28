@@ -1,0 +1,35 @@
+.boxSize1 {
+}
+.boxSize2 {
+}
+.boxSize3 {
+}
+.boxSize4 {
+}
+.boxCollapsed {
+    height:50%;
+}
+.rowLong {
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 30vh;
+    height: 30vW;
+}
+.rowShort {
+    max-height: 30vh;
+    overflow: hidden;
+    min-height: 15vh;
+    height: 15vW;
+}
+.rowLongSecondary {
+    max-height: 40vh;
+    overflow: hidden;
+    min-height: 20vh;
+    height: 15vW;
+}
+.rowShortSecondary {
+    max-height: 15vh;
+    overflow: hidden;
+    min-height: 8vh;
+    height: 8vW;
+}

@@ -1,0 +1,1174 @@
+#carouselExampleSlidesOnly {
+    overflow: hidden;
+
+}
+
+.navBackImg {
+    display: none;
+}
+.carWarp {
+    position: fixed;
+    z-index: -1;
+    top:30px;
+    margin-top: -80px;
+
+}
+
+.dropdown {
+    
+    background: #fff;
+}
+.dropdown-toggle::after {
+    content: none !important; 
+}
+
+dropDwn ,button {
+    border-radius: 0px !important;
+    background: #013a89;
+
+}
+
+.footerPaddWith {
+
+    padding-top:50px;
+}
+
+.fP1 {
+
+    border-bottom:1px solid grey;
+    padding-top:50px;
+}
+.fP2 {
+
+    border-bottom:1px solid grey;
+    padding-top:50px;
+}
+
+
+.mainCont {
+
+    margin-top: 285px;
+}
+
+.cardWarper {
+    border-bottom:1px solid; 
+    border-color: lightslategray;
+    padding: 10px 0px;
+    background-color: white;
+    z-index: 22;
+}
+
+.catHold {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.searchIn {
+
+    background:white;
+    display:flex; 
+    align-items:center;
+    height:100%; 
+    padding-right:10px;
+}
+.searchIn input:focus{
+
+    box-shadow: none;
+}
+.form-control > searchIn:focus {
+
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.dropdown {
+    display: flex;
+}
+.btn:focus {
+
+    box-shadow: none;
+}
+.dropdown-menu.show{
+
+    width: 100%;
+}
+.fa-chevron-down:before{
+
+    align-items: center;
+    height: 100%;
+    display: flex;
+    padding-right: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #007bff;
+}
+
+.masonryWarp a{
+
+    display: flex;
+    height: 100%;
+    
+}
+
+.masonryWarp h5 {
+
+    position: static;
+    margin: 0;
+    font-size: 18px;    
+    color: #013a89;
+    cursor: unset;
+    text-decoration: none;    
+}
+
+#allWeekend {
+    display: block;
+}
+
+.titleWarp {
+
+    display: flex;
+    margin-top: -45px;
+    height: 45px;
+    align-items: center;
+}
+
+.titleCont {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(255, 255, 255, 0.8);    
+
+}
+
+.carousel-caption {
+
+    top:40%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 0;
+
+}
+
+.carousel-caption h1,.carousel-caption h2{
+
+    font-size: 60px !important;
+    font-family: 'Georgia',sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;    
+
+}
+
+.carousel-caption p{
+
+    color: white;
+}
+
+/* -------- Masonry Css --------- */
+
+/* --------- M.C P1 -------- */
+.divHeight {
+
+}
+.divWidth {
+
+}
+
+.masonryWarp {
+
+    height:100%;
+    overflow: hidden;
+}
+
+.masonry-column {
+    padding: 0;
+    height:100%;
+}
+
+#massonaryHolderP_1 {
+
+    max-height: 550px;
+    min-height: 300px;
+    height: 33vW;
+    overflow: hidden;
+
+}
+
+#massonaryHolderP_2 {
+
+    max-height: 70vh;
+    height: 15vW;
+    overflow: hidden;
+}
+
+#massonaryHolderP_3 {
+
+    max-height: 70vh;
+    overflow: hidden;
+    min-height: 30vh;
+    height: 15vW;
+}
+#massonaryHolderP_7 {
+
+    max-height: 70vh;
+    overflow: hidden;
+    min-height: 30vh;
+    height: 15vW;
+}
+
+#massonaryHolderP_4 {
+
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 30vh;
+    height: 14vW;
+}
+
+#massonaryHolderP_5 {
+
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 30vh;
+    height: 14vW;
+}
+
+#massonaryHolderP_6 {
+
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 30vh;
+    height: 15vW;
+}
+
+#massonaryHolderP_7 .masonry-column:nth-child(n+2) .masonryWarp {
+
+    height: 50%;
+}
+
+
+#massonaryHolderP_2 .masonry-column:nth-child(1) {
+
+    z-index: 4;
+}
+ 
+/* #massonaryHolderP_1 .imgPerRow_1 {
+    max-height:100%;
+    max-width: 1000px;
+}
+
+#massonaryHolderP_1 .imgPerRow_2 {
+    height: 100%;
+    max-width: 1000px;
+    min-width: 100%;
+    width: auto;
+}
+#massonaryHolderP_1  .imgPerRow_3 {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#massonaryHolderP_1  .imgPerRow_4 {
+    min-height: 100%;
+    min-width: 100%;
+    
+}
+
+#massonaryHolderP_2 .imgPerRow_5 {
+
+    max-height:1000px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#massonaryHolderP_2 .imgPerRow_6 {
+
+    min-height:100%;
+    min-width: 100%;
+    max-width: 1000%!important;
+    margin-left: -620px;
+
+}
+
+#massonaryHolderP_2 .imgPerRow_7 {
+
+    min-height: 100%;
+    max-width: 10000px;
+}
+
+#massonaryHolderP_3 .imgPerRow_8 {
+
+    min-height: 100%;
+    max-width: 1000px;
+}
+
+#massonaryHolderP_3 .imgPerRow_9 {
+
+    min-height: 100%;
+    max-width: 1000px;
+}
+
+#massonaryHolderP_3 .imgPerRow_10 {
+
+    min-height: 90%;
+    height: 100%;
+    max-width: 900px;
+}
+
+#massonaryHolderP_4 .imgPerRow_11 {
+
+    min-height: 90%;
+    height: 100%;
+    max-width: 900px;
+}
+
+#massonaryHolderP_4 .imgPerRow_12 {
+
+    min-width: 100%;
+    height: auto;
+    margin-top: -97px;
+    min-height: 150%;
+}
+
+#massonaryHolderP_4 .imgPerRow_13 {
+
+    height: 100%;
+    width: auto;
+    max-width: 1000px;
+}
+
+#massonaryHolderP_5 .imgPerRow_14 {
+
+    width: 100%;
+    max-height: 1000px;
+    height: auto;
+}
+
+#massonaryHolderP_5 .imgPerRow_15 {
+
+    width: 100%;
+    max-height: 1000px;
+    height: auto;
+}
+
+#massonaryHolderP_6 .imgPerRow_16 {
+
+    width: 100%;
+    max-height: 1000px;
+    height: auto;
+}
+
+#massonaryHolderP_6 .imgPerRow_17 {
+
+    width: 100%;
+    max-height: 1000px;
+    height: auto;
+}
+
+#massonaryHolderP_7 .imgPerRow_18 {
+
+    height: 100%;
+    max-width: 1000px;
+    min-width: 100%;
+    width: auto;
+} */
+
+.multiImgs .masonryWarp{
+    height: 50% !important;
+}
+.masonryWarp img {
+    /* max-width: auto;
+    min-width: 100%;
+    min-height:100%;
+    max-width: 500px; */
+    width: 100%;
+    object-fit: cover;
+}
+/* --------- M.C P2 -------- */
+
+#massonaryHolderP2_1{
+    
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 50vh;
+    height: 28vW;
+}
+
+#massonaryHolderP2_2{
+    
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 50vh;
+    height: 28vW;
+}
+
+#massonaryHolderP2_3{
+    
+    max-height: 70vh;
+    overflow: hidden;
+    min-height: 20vh;
+    height: 17vW;
+}
+
+#massonaryHolderP2_4{
+    
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 50vh;
+    height: 28vW;
+}
+
+#massonaryHolderP2_5{
+    
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 20vh;
+    height: 17vW;
+}
+
+#massonaryHolderP2_6{
+    
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 40vh;
+    height: 15vW;
+}
+
+
+
+#massonaryHolderP2_1 .masonry-column:nth-child(n+2) .masonryWarp {
+
+    height: 50%;
+
+}
+.groupHorizontal {
+    height:50%;
+    position: relative;
+}
+#massonaryHolderP2_2 .masonry-column:nth-child(odd) .masonryWarp {
+
+    height: 50%;
+
+}
+
+#massonaryHolderP2_6 .masonry-column:nth-child(2) .masonryWarp {
+
+    height: 100%;
+
+}
+
+
+
+#massonaryHolderP2_4 .masonry-column:nth-child(2) .masonryWarp {
+
+    height: 50%;
+
+}
+
+#massonaryHolderP2_6 .masonry-column:nth-child(2) {
+
+    font-size: 0;
+
+}
+
+#massonaryHolderP2_6 .masonry-column:nth-child(2) .masonryWarp:nth-child(1) {
+
+    width: 40%;
+    display: inline-block;
+
+}
+
+#massonaryHolderP2_6 .masonry-column:nth-child(2) .masonryWarp:nth-child(4) {
+
+    width: 40%;
+    display: inline-block;
+
+}
+
+#massonaryHolderP2_6 .masonry-column:nth-child(2) .masonryWarp:nth-child(3) {
+
+    width: 60%;
+    display: inline-block;
+
+}
+
+#massonaryHolderP2_6 .masonry-column:nth-child(2) .masonryWarp:nth-child(2) {
+
+    width: 60%;
+    display: inline-block;
+
+}
+
+#massonaryHolderP2_1 .imgPerRow_1 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_1 .imgPerRow_2 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_1 .imgPerRow_3 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_1 .imgPerRow_4 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_1 .imgPerRow_5 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_2 .imgPerRow_6 {
+
+    width: 100%;
+    max-height: 1000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP2_2 .imgPerRow_7 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_2 .imgPerRow_8 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_2 .imgPerRow_9 {
+
+    width: 100%;
+    max-height: 1000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP2_2 .imgPerRow_10 {
+
+    width: 100%;
+    max-height: 1000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP2_3 .imgPerRow_11 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_3 .imgPerRow_12 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_3 .imgPerRow_13 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_3 .imgPerRow_14 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_4 .imgPerRow_15 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_4 .imgPerRow_16 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_5 .imgPerRow_17 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_5 .imgPerRow_18 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_5 .imgPerRow_19 {
+
+    width: 100%;
+    max-height: 1000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP2_5 .imgPerRow_20 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_6 .imgPerRow_21 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP2_6 .imgPerRow_22 {
+    height: auto;
+    max-width: 1000px;
+    width: 100%;
+    min-width: 25%;
+}
+
+#massonaryHolderP2_6 .imgPerRow_23 {
+
+    width: 100%;
+    max-height: 1000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP2_6 .imgPerRow_24   {
+    
+    min-width: 100%;
+    max-height: 1000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP2_6 .imgPerRow_25 {
+    height: auto;
+    max-width: 1000px;
+    width: 100%;
+    min-width: 25%;
+}
+
+#massonaryHolderP2_6 .imgPerRow_26 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 25%;
+}
+
+
+
+/* --------- M.C P3 -------- */
+
+#massonaryHolderP3_1{
+    
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 30vh;
+    height: 17vW;
+}
+
+#massonaryHolderP3_2{
+    
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 25vh;
+    height: 16vW;
+}
+
+#massonaryHolderP3_3{
+    
+    max-height: 100vh;
+    overflow: hidden;
+    min-height: 50vh;
+    height: 30vW;
+}
+
+#massonaryHolderP3_4{
+    
+    max-height: 100vh;
+    overflow: hidden;
+    min-height: 50vh;
+    height: 25vW;
+}
+
+
+#massonaryHolderP3_5{
+    
+    max-height: 60vh;
+    overflow: hidden;
+    min-height: 20vh;
+    height: 13vW;
+}
+
+
+#massonaryHolderP3_3 .masonry-column:nth-child(1) .masonryWarp {
+
+    height: 50%;
+
+}
+
+#massonaryHolderP3_4 .masonry-column:nth-child(even) .masonryWarp {
+
+    height: 50%;
+
+}
+
+
+#massonaryHolderP3_3 .masonry-column:nth-child(1) {
+
+    white-space: nowrap;
+    font-size: 0;
+
+}
+
+#massonaryHolderP3_3 .masonry-column:nth-child(1) .masonryWarp:nth-child(-n+2) {
+
+    width: 50%;
+    display: inline-block;
+
+}
+
+#massonaryHolderP3_1 .imgPerRow_1 {
+
+    width: 100%;
+    max-height: 1000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP3_1 .imgPerRow_2 {
+
+    width: 100%;
+    max-height: 1000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP3_2 .imgPerRow_3 {
+
+    width: 100%;
+    max-height: 10000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP3_2 .imgPerRow_4 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_3 .imgPerRow_5 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_3 .imgPerRow_6 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_3 .imgPerRow_7 {
+
+    width: 100%;
+    max-height: 10000px;
+    min-height: 100%;
+    height: auto;
+}
+
+#massonaryHolderP3_3 .imgPerRow_8 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_4 .imgPerRow_9 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_4 .imgPerRow_10 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_4 .imgPerRow_11 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_4 .imgPerRow_12 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_4 .imgPerRow_13 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_4 .imgPerRow_14 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_5 .imgPerRow_15 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_5 .imgPerRow_16 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_5 .imgPerRow_17 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_5 .imgPerRow_18 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+#massonaryHolderP3_5 .imgPerRow_19 {
+
+    height: 100%;
+    max-width: 1000px;
+    width: auto;
+    min-width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1216px) {
+
+/* -------- navover fix --------- */
+
+    .navOver4H {
+
+        padding-bottom: 10px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* ipad only CSS     */
+
+    .carousel-item img {
+
+        max-width: 1000%;
+        height: 611px;
+        margin-top: 50px;
+
+    }
+
+    .carousel-inner {
+
+        height: 650px;
+    }
+
+    .overviewHold {
+
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .slImg {
+        max-width: none;
+        min-width: 184%;
+        margin-left: -183px;
+    }
+
+    div.mainCont {
+        margin-top: 371px;
+    }
+}
+
+
+@media (min-width: 768px){
+
+    /* phone device CSS */
+
+    .hiddeDiv {
+      display: none;
+    }
+      
+    .masonry-grid > div .thumbnail {
+    margin: 5px 1px;
+    }
+
+    .mainCont {
+
+        margin-top: 450px;
+    }
+
+    .dDowns{
+        width: 100%;
+    }
+      
+ }
+
+ @media (max-width: 767px) {
+
+    .masonry-grid {
+
+        display: none;
+    }
+
+    .overviewHold {
+
+        display: none;
+    }
+    .navOver4H {
+        display: none;
+    }
+
+    .dDownsHide {
+
+        background: rgba(255, 255, 255, 0.6);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+                
+        }
+    
+        .dropDwn, .dDownsHolder {
+    
+            padding: 2px 5px;
+        }
+    
+        .mainCont2 {
+            display: block !important;
+            margin-top:0px;
+        }   
+    
+        .mainCont {
+    
+            margin-top:200px;
+        }
+
+
+ }
+
+ @media ( min-width: 992px ) {
+
+    /* web browser CSS */
+
+    .overviewHold {
+        margin-top:0px;
+    }
+
+    
+ }
+
+ @media(min-width: 768px) {
+
+    .dDownsHide {
+
+        background: rgba(255, 255, 255, 0.6);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+                
+        }
+ }
+ 
+ @media (max-width:576px) {
+
+    .mobileMassonaryHide {
+        display: none;
+    }
+
+    .navOver4H {
+
+        display: none;
+    }
+
+    .hiddeDiv {
+        
+        display: block;
+    }
+    .mobImgCatHolder a{
+        width:150px;
+        height:150px;
+        display: flex;
+    }
+    .mobImgCatHolder img{
+        max-width: unset;
+        min-height: unset;
+        min-width: unset;
+        width: 100%;
+        object-fit: cover;
+    }
+    .cardWarper {
+        
+        overflow: hidden;
+        max-height: 50vh;
+        min-height: 25vh;
+        height: 25vW;
+    }
+    .slImg {
+
+        min-height: 100%;
+        max-height: 1000%;
+        max-width: none;
+        height: 100%;
+    }
+
+    .carousel-item {
+
+        height: 355px;
+        margin-top: 40px;
+    }
+
+    .imgDivWarp {
+
+        overflow: hidden;
+        padding-left: 5px;
+    }
+
+    .imgDivWarp img{
+
+        max-width: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+    .catHold p {
+
+        font-size: 14px;
+        color: #013a89;
+        vertical-align: middle;
+        display: table-cell;
+    }
+    .catHold a {
+
+        height: 100%;
+        width: 100%;
+        display: table;
+    }
+
+    .dDownsHide {
+
+    background: rgba(255, 255, 255, 0.6);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+            
+    }
+
+    .dropDwn, .dDownsHolder {
+
+        padding: 2px 5px;
+    }
+
+    .mainCont2 {
+
+        margin-top:0px;
+    }   
+
+    .mainCont {
+
+        margin-top:200px;
+    }
+  }
+

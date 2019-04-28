@@ -1,0 +1,268 @@
+.stepsHold {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+  
+  .stepsHold .nopadding {
+    background: #afb4c7;
+    float: left;
+    text-align: center;
+    height: 23px;
+    text-transform: uppercase;
+    margin-left: 0;
+    justify-content: center;
+}
+  
+  .stepsHold h5 {
+  
+    font-size: 16px;
+    text-align: center;
+    margin:0px;
+    line-height: 23px;
+}
+
+.stepsHold {
+
+    white-space: normal;
+}
+
+.step1, .step2, .step3{
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step3 {
+    background: #0068b5 !important;
+    color: #fff;   
+}
+
+  
+.stepsHold .nopadding {
+    background: #afb4c7;
+    float: left;
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-left: 0;
+    display: flex;
+}
+  
+  .stepsHold h5 {
+  
+    font-size: 16px;
+    text-align: center;
+    margin:0px;
+}
+
+.step2Title h1{
+
+    color: #e20510;
+    font-size: 34px;
+    padding: 20px 0px;
+}
+
+.giftStep3Row {
+
+    border-top: 2px solid #b4b4b4;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+.giftStep2Row {
+
+    border-bottom: 2px solid #b4b4b4;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+.table tr td {
+    border: none;
+    padding: 0;
+}
+
+.infoMessage {
+
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0068b5;
+    color: #0068b5;
+    background: #d8ebff;
+}
+
+.buttonBack {
+    margin-top: 20px;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+.buttonSuc {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+.button button {
+    color: #Fff;
+    background-color: #013a89 !important;
+    width: 160px;
+    border-radius: 5px !important;
+    text-align: center;
+    font-size: 12px;
+    height: 44px;
+    line-height: 12px;
+    font-family: 'Roboto',sans-serif;
+    text-transform: uppercase;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (max-width:576px) {
+
+    .step2Title h1 {
+
+        font-size: 27px
+    }
+
+    .giftStep2Row table {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .giftStep2Row table tr:first-child td {
+        
+        padding-bottom: 0px;
+    }    
+    .formTitle {
+
+        font-size: 11px;
+    }
+
+    #voucherStep2 form{
+
+        font-size:11px;
+    }
+
+    .hideLabel {
+        display: none;
+    }
+
+    .radddIoButton {
+
+        margin-bottom:0px;
+    }
+
+    .checkBoxRow label{
+
+        font-size:11px !important;     
+        color: #999;   
+    }
+    .checkBoxRow input {
+
+        margin-top:7px;
+    }
+    .buttonBack button, .buttonSuc button{
+
+        font-size: 11px;
+        width: 120px;
+        height: 35px;
+    }
+
+    .buttonBack {
+        
+        margin-left:0px;
+    }
+
+    .giftStep3Row table {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .giftStep3Row table td, .giftStep3Row table td{ 
+        
+        width: 40%;
+    }
+    
+
+    .giftStep3Row table tr:first-child td {
+        
+        padding-bottom: 0px;
+    }
+    
+    .creditCardRules {
+
+        font-size: 11px;
+    }
+
+    .voucherInfo h4 {
+        font-size: 14px;
+    }
+
+    .voucherInfo h5 {
+        font-size: 8px;
+        padding: 5px 15px;
+
+    }
+    
+    .priceNdate.geschukeN {
+
+        height: 20px;
+        margin-top: 30px;
+        padding: 5px 0px;
+    }
+    .geschukeN.priceNdate h6 {
+
+        font-size: 8px;
+    }
+
+    .voucherFooter {
+
+        margin-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .giftImgHolder ul li {
+
+        width: 40px;
+    }
+
+    .thumbImg {
+
+        height: 50px;
+    }
+
+    .giftStep3Row h2 {
+
+        font-size: 11px;
+    }
+
+    #voucherStep4 p {
+        
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .confirmFirstPharagraph {
+        margin-bottom: 0px;
+    }
+    .stepsHold h5 {
+
+        height: 23px;
+    }
+}
+
+@media (min-width:768px){
+
+    .giftStep3Row .table tr td:first-child, .giftStep2Row .table tr td:first-child {
+        width: 165px;
+    }
+}

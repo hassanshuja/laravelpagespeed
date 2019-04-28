@@ -1,0 +1,50 @@
+.titleWraper h1 {
+    font-size:30px; 
+    color: red;
+}
+
+.textWraper p {
+    color: #9e9e9e
+}
+
+.textWraper {
+    width: 100%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.gruppenanfrageForm h4, .gruppenanfrageForm2 h4 {
+
+    font-size: 16.8px !important;
+    font-weight: bold;
+    margin: 12px 0 25px;
+    color: #626262;
+}
+
+.form-row.row {
+    font-weight: 400;
+    color: #626262;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.submitVoucher button {
+    width: 160px;
+    background-color: #002e6e;
+    color: #fff;
+    font-size: 12px;
+    height: 44px;
+    text-transform: uppercase;
+    float: right;
+  }
+  
+  .submitVoucher button:hover {
+    
+    background: linear-gradient(to bottom, #00499a 0%, #0083c5 100%);
+  
+  }
+  .submitVoucher button:active {
+    
+    background: linear-gradient(to bottom, #00499a 0%, #0083c5 100%)!important;
+  
+  }

@@ -1,0 +1,90 @@
+rewrite ^(.*)ü(.*)$ $1ue$2 permanent;
+
+rewrite ^/index.php/(.*) /$1  permanent;
+
+rewrite ^/nc/storage-folder/angebote/geschenkgutschein-geschenkidee/ideen/([a-zA-Z1-9-_]+)/ /angebote/geschenkgutschein-geschenkidee/ideen/$1/ permanent;
+
+rewrite ^/nc/geschenkgutschein-geschenkidee/ideen/([a-zA-Z1-9-_]+)/ /angebote/geschenkgutschein-geschenkidee/ideen/$1/   permanent;
+
+rewrite ^/nc/de/storage-folder/angebote/geschenkgutschein-geschenkidee/ideen/([a-zA-Z1-9-_]+)/ /angebote/geschenkgutschein-geschenkidee/ideen/$1/ permanent;
+
+rewrite ^/nc/de/geschenkgutschein-geschenkidee/ideen/([a-zA-Z1-9-_]+)/ /angebote/geschenkgutschein-geschenkidee/ideen/$1/   permanent;
+
+
+location ~ \.html$ {
+    if (!-f $request_filename) {
+		rewrite ^/erlebnis/([^/]+)\.html$ /ausflug/$1/ permanent;
+		
+		rewrite ^/erlebnis/tagesausflug/([^/]+)\.html$ /tagesausflug/$1/ permanent;
+		rewrite ^/erlebnis/weekend/([^/]+)\.html$ /weekend/$1/ permanent;
+		rewrite ^/erlebnis/gruppenausfluege/([^/]+)\.html$ /gruppenausfluege/$1/ permanent;
+
+
+		rewrite ^/erlebnis/([^/]+)/tagesausflug/([^/]+)\.html$ /tagesausflug/$2/region/$1/ permanent;
+		rewrite ^/erlebnis/([^/]+)/weekend/([^/]+)\.html$ /weekend/$2/region/$1/ permanent;
+		rewrite ^/erlebnis/([^/]+)/gruppenausfluege/([^/]+)\.html$ /gruppenausfluege/$2/region/$1/ permanent;
+		
+		
+		rewrite ^/erlebnis/([^/]+)/weekend.html$ /weekend/region/$1/ permanent;
+		rewrite ^/erlebnis/([^/]+)/tagesausflug.html$ /tagesausflug/region/$1/ permanent;
+		rewrite ^/erlebnis/([^/]+)/gruppenausfluege.html$ /gruppenausfluege/region/$1/ permanent;
+    }
+}
+rewrite ^/(?!update)(.*)/(?!.*\..*)(.*[^\/])$ /$1/$2/ permanent;
+
+rewrite ^/Tagesausflug/([a-zA-Z1-9-_]+)/(.*) /tagesausflug/$1  permanent;
+
+rewrite ^/([a-zA-Z1-9-_]+)region/innerschweiz/ /$1region/zentralschweiz/  permanent;
+rewrite ^/([a-zA-Z1-9-_]+)region/Innerschweiz/ /$1region/zentralschweiz/  permanent;
+rewrite ^/([a-zA-Z1-9-_]+)region/bern-a-oberland/ /$1region/bern-oberland/  permanent;
+
+rewrite ^/tagesauslfug/([a-zA-Z1-9-_]+)/region/([a-zA-Z1-9-_]+)/ /tagesausflug/$1/region/$2/ permanent;
+rewrite ^/Tagesauslfug/([a-zA-Z1-9-_]+)/region/([a-zA-Z1-9-_]+)/ /tagesausflug/$1/region/$2/ permanent;
+
+rewrite ^/tagesauslfug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/region/$1/ permanent;
+rewrite ^/Tagesauslfug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/region/$1/ permanent;
+
+rewrite ^/tagesauslfug/([a-zA-Z1-9-_]+)/ /tagesausflug/$1/ permanent;
+rewrite ^/Tagesauslfug/([a-zA-Z1-9-_]+)/ /tagesausflug/$1/ permanent;
+
+rewrite ^/de/erlebnis-schweiz/action/show/angebot/([a-zA-Z1-9-_]+)/ /ausflug/$1/ permanent;
+
+rewrite ^/erlebnis-schweiz/kategorie/weekend/0/region/([a-zA-Z1-9-_])/ /weekend/region/$1/ permanent;
+
+rewrite ^/erlebnis-schweiz/kategorie/elektromobil/0/region/([a-zA-Z1-9-_])/ /tagesausflug/snowmobil/region/$1/ permanent;
+
+
+rewrite ^/erlebnis-schweiz/kategorie/0/golf/region/([a-zA-Z1-9-_])/ /weekend/golf-wellness/region/$1/ permanent;
+rewrite ^/erlebnis-schweiz/kategorie/0/loveroom/region/([a-zA-Z1-9-_])/ /weekend/golf-wellness/region/$1/ permanent;
+
+rewrite ^/weekend/winter-special/(.*) /weekend/winter-weekend/$1 permanent;
+rewrite ^/weekend/romantik-whirlpool-zimmer/region/([a-zA-Z1-9-_]+)/ /weekend/romantik-whirlpool/region/$1/  permanent;
+rewrite ^/weekend/schneeschuhwandern/region/([a-zA-Z1-9-_]+)/ /weekend/schneeschuhtour/region/$1/ permanent;
+rewrite ^/weekend/luxusHotels/region/([a-zA-Z1-9-_]+)/ /weekend/luxus-hotels/region/$1/  permanent;
+rewrite ^/tagesausflug/heliskiing-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/heliskiing-1/region/$1/ permanent;
+rewrite ^/tagesausflug/schneeschuhwandern-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/schneeschuhwandern/region/$1/ permanent;
+rewrite ^/tagesausflug/snowmobil-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/snowmobil/region/$1/ permanent;
+rewrite ^/tagesausflug/huskytour-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/huskytour/region/$1/ permanent;
+rewrite ^/tagesausflug/skitouren-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/skitouren-1/region/$1/ permanent;
+rewrite ^/tagesausflug/romantik-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/romantik/region/$1/ permanent;
+rewrite ^/tagesausflug/mit-kindern-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/mit-kindern/region/$1/ permanent;
+rewrite ^/tagesausflug/weinkurs-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/weinkurs/region/$1/ permanent;
+rewrite ^/tagesausflug/rundfluege-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/rundfluege/region/$1/ permanent;
+rewrite ^/tagesausflug/paragliding-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/paragliding/region/$1/ permanent;
+rewrite ^/tagesausflug/selber-fliegen-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/selber-fliegen/region/$1/ permanent;
+rewrite ^/tagesausflug/segway-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/segway/region/$1/ permanent;
+rewrite ^/tagesausflug/quad-fahren-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/quad-fahren/region/$1/ permanent;
+rewrite ^/tagesausflug/rennstrecke-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/rennstrecke/region/$1/ permanent;
+rewrite ^/tagesausflug/schokolade-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/schokolade/region/$1/ permanent;
+rewrite ^/tagesausflug/iglu-bauen-tagesausflug/region/([a-zA-Z1-9-_]+)/ /tagesausflug/iglu-bauen-1/region/$1/ permanent;
+rewrite ^/weekend/western-ranch/region/([a-zA-Z1-9-_]+)/ /weekend/westernreiten/region/$1/ permanent;
+
+rewrite ^/weekend/winter-special/([a-zA-Z1-9-_]+)/ /weekend/winter-weekend/region/$1/ permanent;
+
+
+
+
+
+
+
+
